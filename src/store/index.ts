@@ -5,7 +5,7 @@ import categories from "./categories/categoriesSlice"
 import products from "./products/productsslice";
 import cart from "./cart/cartSlice";
 import wishlist from './wishlist/wishlistslices';
-import auth from './auth/authslice'
+import auth from './auth/authSlice'
 import orders from './orders/ordersslice';
 
 const rootPreistConfig = {

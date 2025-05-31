@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import actLikeToggle from "./act/actLikeToggle";
 import actGetWishlist from "./act/actGetWishlist";
-import { authlogout } from "@store/auth/authslice";
+import { authlogout } from "@store/auth/authSlice";
 import { TLoading } from "@customTypes/Shared";
 import { TProduct } from "@customTypes/product";
 

@@ -155,10 +155,12 @@ const router = createBrowserRouter([
             },
         ],
     },
-]);
+],
+    { basename: "/E-com/" }
+);
 
 const AppRouter = () => {
-    return <RouterProvider router={router} basename="/E-com/" />;
+    return <RouterProvider router={router}  />;
 };
 
 export default AppRouter;

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 import { useAppDispatch, useAppSelector } from "@store/hooks";
-import { actAuthLogin, resetUI } from "@store/auth/authslice";
+import { actAuthLogin, resetUI } from "@store/auth/authSlice";
 
 // Take query from url
 import { useSearchParams, useNavigate } from "react-router-dom";

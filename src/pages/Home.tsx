@@ -1,5 +1,4 @@
-import Hero from "@assets/img_Home/Hero.png";
-import ggg1 from "@assets/img_Home/ggg1.jpeg";
+// import Hero from "@assets/img_Home/Hero.png";
 import ggg2 from "@assets/img_Home/ggg2.jpeg";
 
 // import img1 from "@assets/img_Home/img_1.png";
@@ -26,14 +25,15 @@ import Get2 from "@assets/img_Home/get2.jpg";
 // import recent3 from "@assets/img_Home/recent3.png";
 
 
-import { Button, Col, Container, Row } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
-import Item_Img from "@components/Home/Item_Img";
+import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { TProduct } from "@customTypes/product";
 
 
 type Item_Type = {
+    id: number;
     img?: string;
     title: string;
     price?: number;
@@ -185,9 +185,9 @@ const Home = () => {
                                         End of season sale. Buy any 2 items of your choice and get 1
                                         free.
                                     </p>
-                                    <Button as={NavLink} to="/categories" variant="success">
+                                    <Link to="/categories">
                                         BUY NOW
-                                    </Button>
+                                    </Link>
                                 </div>
                             </div>
                         </Col>
@@ -219,14 +219,12 @@ const Home = () => {
                             <Item_Img img={img4} title="Pink Casual Shirt" price={29} Link_Item={`/categories/products/women`} /> */}
                         </Row>
                     </div>
-                    <Button
-                        as={NavLink}
+                    <Link
                         to="categories"
-                        variant="info"
                         style={{ color: "white" }}
                     >
                         Shop Now
-                    </Button>
+                    </Link>
                 </div>
             </div>
         </Container>

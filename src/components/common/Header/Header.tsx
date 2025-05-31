@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 import { useAppDispatch, useAppSelector } from "@store/hooks";
 
-import { authlogout } from "@store/auth/authslice";
+import { authlogout } from "@store/auth/authSlice";
 
 import HeaderLeftBar from "./HeaderLeftBar/HeaderLeftBar";
 

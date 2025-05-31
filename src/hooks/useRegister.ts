@@ -4,7 +4,7 @@ import { useAppDispatch, useAppSelector } from "@store/hooks";
 import {  useNavigate } from "react-router-dom";
 
 // act authregister
-import { actAuthRegister, resetUI } from "@store/auth/authslice";
+import { actAuthRegister, resetUI } from "@store/auth/authSlice";
 
 // Hook Form
 import { useForm, SubmitHandler } from "react-hook-form";

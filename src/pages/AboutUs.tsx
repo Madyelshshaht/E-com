@@ -16,14 +16,9 @@ import t3 from "@assets/img_Home/t3.png";
 
 import Item_Img from "@components/Home/Item_Img";
 
-type Item_Type = {
-    img?: string;
-    title: string;
-    price?: number;
-    Link_Item: string;
-};
 
-const AboutUs = ({ title, img, price, Link_Item }: Item_Type) => {
+
+const AboutUs = () => {
     return (
         <Container>
             <div className="About pt-3">
