@@ -1,0 +1,11 @@
+.headerLeftBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerLeftBar>div:first-of-type {
+    border-right: 1px solid black;
+    padding-right: 10px;
+}

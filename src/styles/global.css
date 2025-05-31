@@ -1,0 +1,54 @@
+.notFound {
+    margin-top: 15%;
+    text-align: center;
+}
+
+.notFound h1 {
+    font-size: 130px;
+}
+
+.notFound p {
+    font-size: 50px;
+    text-decoration: none ;
+}
+
+.Home_img:hover {
+    border-radius: 14%;
+    transform: scale(1.1);
+    transition-duration: 1s;
+    box-shadow: 0 0 10px rgb(88, 88, 88);
+}
+
+.img_Content {
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    width: 50%;
+    bottom: 5px;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+.input-email{
+    border: none;
+    outline: none;
+    border-radius: 0px;
+}
+.input-email:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid black;
+}
+
+
+@media (max-width: 576px) { 
+    .btn-sm-text {
+        font-size: 10px !important;
+        padding: 5px 0px !important;
+    }
+}
