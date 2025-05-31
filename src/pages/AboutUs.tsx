@@ -64,24 +64,28 @@ const AboutUs = () => {
                     <div className="Arivals pt-3">
                         <Row>
                             <Item_Img
+                                id={1}
                                 img={Abo1}
                                 title="Gray Polo Shirt"
                                 price={20}
                                 Link_Item={`/categories/products/men`}
                             />
                             <Item_Img
+                                id={2}
                                 img={Abo2}
                                 title="Gray Polo Shirt"
                                 price={50}
                                 Link_Item={`/categories/products/men`}
                             />
                             <Item_Img
+                                id={3}
                                 img={Abo3}
                                 title="Gray Polo Shirt"
                                 price={15}
                                 Link_Item={`/categories/products/men`}
                             />
                             <Item_Img
+                                id={4}
                                 img={Abo4}
                                 title="Gray Polo Shirt"
                                 price={30}

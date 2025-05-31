@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const { link } = styles;
 
 type Item_Type = {
-    id: number;
+    id?: number;
     img?: string;
     title: string;
     price?: number;

@@ -9,11 +9,11 @@ type TFormData = {
 }
 
 type TResponse = {
-    accessToken: string ,
+    accessToken: string,
     user: {
         id: number;
-        firstname: string;
-        lastname: string;
+        firstName: string;
+        lastName: string;
         email: string;
     }
 }
@@ -22,16 +22,17 @@ type TResponse = {
 
 const actAuthLogin = createAsyncThunk(
     "auth/actAuthLogin",
-    async (formData : TFormData , thunkAPI) => {
+    async (formData: TFormData, thunkAPI) => {
         const { rejectWithValue } = thunkAPI;
 
         try {
-            const res = await axios.post<TResponse>( "/login" , formData )
-            console.log("login",res.data)
-            return res.data
-        } 
+            const res = await axios.post<TResponse>("/login", formData)
+            console.log("login", res.data)
+            return res.data;
+
+        }
         catch (error) {
-            return rejectWithValue (axiosErrorHandler(error));
+            return rejectWithValue(axiosErrorHandler(error));
         }
     }
 )
